@@ -1,0 +1,1 @@
+import{Ca as n,Oa as o,Pa as c,Sa as s}from"./chunk-QJCVD6DQ.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-concepts"]],decls:2,vars:0,template:function(e,i){e&1&&(o(0,"p"),s(1,"concepts works!"),c())},encapsulation:2})};export{p as Concepts};

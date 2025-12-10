@@ -1,0 +1,1 @@
+import{Ca as i,Oa as o,Pa as a,Sa as m}from"./chunk-QJCVD6DQ.js";var l=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=i({type:e,selectors:[["app-politic-game-simulator"]],decls:2,vars:0,template:function(t,s){t&1&&(o(0,"p"),m(1,"politic-game-simulator works!"),a())},encapsulation:2})};export{l as PoliticGameSimulator};

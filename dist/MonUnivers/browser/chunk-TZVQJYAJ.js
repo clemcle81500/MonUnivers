@@ -1,0 +1,1 @@
+import{Ca as o,Oa as s,Pa as i,Sa as n}from"./chunk-QJCVD6DQ.js";var r=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-theories"]],decls:2,vars:0,template:function(e,p){e&1&&(s(0,"p"),n(1,"theories works!"),i())},encapsulation:2})};export{r as Theories};
