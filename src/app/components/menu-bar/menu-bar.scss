@@ -1,0 +1,112 @@
+/* NAVBAR */
+nav {
+  background: var(--primary-color);
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+nav h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  margin: 0;
+}
+
+/* LIENS */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 12px 8px;
+  font-size: 1rem;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+}
+
+/* effet underline */
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: var(--sub-primary-color);
+  transition: 0.25s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* SUBMENU */
+.submenu {
+  position: relative;
+}
+
+/* menu déroulant */
+.submenu-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 6px 6px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+/* affichage au hover */
+.submenu:hover .submenu-menu {
+  display: block;
+}
+
+/* liens du submenu */
+.submenu-menu a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
+
+.submenu-menu a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 14px;
+    margin: 2px 0;
+  }
+
+  .submenu-menu {
+    position: static;
+    box-shadow: none;
+  }
+}

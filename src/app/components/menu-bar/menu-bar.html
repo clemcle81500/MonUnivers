@@ -1,9 +1,25 @@
 <nav>
-  <a routerLink="/home">Accueil</a>
-  <a routerLink="/theories">Théories</a>
-  <a routerLink="/stories">Histoires</a>
-  <a routerLink="/concepts">Concepts</a>
-  <a routerLink="/video-games">Jeux vidéos</a>
-  <a routerLink="/politic">Politique</a>
-  <a routerLink="'/about'">À propos</a>
+  <div>
+    <h1>Mon univers</h1>
+  </div>
+
+  <div class="nav-links">
+    <a routerLink="/home">Accueil</a>
+    <a routerLink="/theories">Théories</a>
+    <a routerLink="/stories">Histoires</a>
+    <a routerLink="/concepts">Concepts</a>
+    <a routerLink="/video-games">Jeux vidéos</a>
+
+    <div class="submenu">
+      <a routerLink="/songs" class="submenu-toggle">Chansons</a>
+      <div class="submenu-menu">
+        @for (musicAlbum of musicAlbums; track musicAlbum) {
+          <a [routerLink]="'/songs/' + musicAlbum">{{ musicAlbum }}</a>
+        }
+      </div>
+    </div>
+
+    <a routerLink="/politic">Politique</a>
+    <a routerLink="/about">À propos</a>
+  </div>
 </nav>

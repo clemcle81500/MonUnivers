@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { PdfReaderService } from '../../services/pdf-reader.service';
 
 @Component({
   selector: 'app-politic',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './politic.scss',
 })
 export class Politic {
-
+  // constructor(protected pdfReaderService: PdfReaderService) {}
 }
